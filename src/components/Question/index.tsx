@@ -22,14 +22,13 @@ export function Question({
   children,
 }: QuestionProps) {
   return (
-    <div className="question">
-      <div 
+    <div 
       className={cx(
         'question', 
         { answered: isAnswered },
         { highlighted: isHighlighted && !isAnswered },
       )}
-      ></div>
+    >
       <p>{content}</p>
       <footer>
         <div className="user-info">
@@ -42,4 +41,4 @@ export function Question({
       </footer>
     </div>
   );
-} 
+}
